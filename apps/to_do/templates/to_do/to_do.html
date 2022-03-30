@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+
+{% block title %} {{ title }} || {{ block.super }} {% endblock %}
+
+{% block content %}
+    {% for item in to_do_list %}
+        <div>
+            {{ item }}
+        </div>
+    {% endfor %}
+{% endblock %}
