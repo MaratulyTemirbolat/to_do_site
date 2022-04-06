@@ -10,8 +10,6 @@ from django.views.generic import (
 )
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
-from django.core.handlers.wsgi import WSGIRequest  # noqa
-from django.http import HttpResponse  # noqa
 
 from to_do.models import Exercise
 from to_do.forms import ExerciseCreationForm
